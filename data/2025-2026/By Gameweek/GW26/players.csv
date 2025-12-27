@@ -555,7 +555,7 @@ player_code,player_id,first_name,second_name,web_name,team_code,position
 114243,489,Jacob,Murphy,J.Murphy,4,Midfielder
 180974,490,Joelinton Cássio,Apolinário de Lira,Joelinton,4,Midfielder
 432422,491,Sandro,Tonali,Tonali,4,Midfielder
-666607,772,Sam,Alabi,Alabi,4,Midfielder
+230046,699,Douglas Luiz,Soares de Paulo,Douglas Luiz,17,Midfielder
 499309,252,Marc,Guiu Paz,Marc Guiu,8,Forward
 640108,492,Antoñito,Cordero Campillo,Antoñito C.,4,Midfielder
 200089,494,Joe,Willock,Willock,4,Midfielder
@@ -571,6 +571,7 @@ player_code,player_id,first_name,second_name,web_name,team_code,position
 470313,714,Nick,Woltemade,Woltemade,4,Forward
 19236,753,John,Ruddy,Ruddy,4,Goalkeeper
 553746,765,Leo,Shahar,Shahar,4,Defender
+666607,772,Sam,Alabi,Alabi,4,Midfielder
 206325,12,Oleksandr,Zinchenko,Zinchenko,17,Defender
 432714,426,James,McAtee,McAtee,17,Midfielder
 85633,502,Matz,Sels,Sels,17,Goalkeeper
@@ -603,7 +604,6 @@ player_code,player_id,first_name,second_name,web_name,team_code,position
 107265,675,Angus,Gunn,Gunn,17,Goalkeeper
 503301,693,Omari,Hutchinson,Hutchinson,17,Midfielder
 465680,696,Arnaud,Kalimuendo,Kalimuendo,17,Forward
-230046,699,Douglas Luiz,Soares de Paulo,Douglas Luiz,17,Midfielder
 138001,630,Tom,King,King,11,Goalkeeper
 221389,715,John Victor,Maciel Furtado,John,17,Goalkeeper
 500151,716,Nicolò,Savona,Savona,17,Defender
