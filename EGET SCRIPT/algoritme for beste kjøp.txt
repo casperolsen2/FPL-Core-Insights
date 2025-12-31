@@ -1,0 +1,36 @@
+Algoritme for beste kjøp
+
+Faktorer:
+    Form
+    PPG siste 5 kampene
+    Difficulty neste 3 kamper
+        def ratings
+        off ratings
+    Minutter spilt
+    Clean sheets
+    DefCon
+    status
+
+Form - fra min 3.5 til 10
+PPG siste 5 kamper - minimum 3
+difficulty neste 3 kamper - avhengig av def / off ratings
+Minutter spilt siste 3 - minimum 60*3
+Clean sheets - ingen minimum, men burde booste for forsvar, keeper og midtbanespillere
+    burde booste mest for keeper og forsvar, ettersom det er mer poeng
+DefCon - samme som clean sheets
+status - skal være a (available)
+
+
+startfase funksjon
+
+def clamp(x, lo, hi):
+    return max(lo, min(x, hi))
+
+if str(row['status']).lower() != "a":
+    return 0.0
+
+pos = row['position']
+
+form_n = clamp((row['form'] - 3.5)/ (10-3.5), 0, 1)
+ppg5_n = clamp((ppg5 - 3) / (8 - 3), 0, 1)
+mins3_n = clamp((mins3 - 180) / (270-180), 0, 1)

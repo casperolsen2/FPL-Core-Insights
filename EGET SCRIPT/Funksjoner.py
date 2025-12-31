@@ -41,7 +41,6 @@ def moneyball_topp_10(ps_clean):
     topp10 = liste.sort_values("value", ascending = False).head(10)
     return topp10
 
-#print(moneyball_topp_10(ps_clean)['web_name'])
 
 def best_form_topp_10(ps_clean):
     liste = ps_clean[(ps_clean['form']>0)]
@@ -49,12 +48,23 @@ def best_form_topp_10(ps_clean):
     topp10 = liste.sort_values("form", ascending = False).head(10)
     return topp10
 
-def print_spiller(ps_clean, spiller):
+def print_spiller(ps_clean, etternavn, fornavn):
     temp = None
+    if fornavn == None:
+        for _, sp in ps_clean.iterrows():
+            if etternavn.lower() == str(sp['second_name']).lower():
+                temp = sp
+                return f"""{temp['first_name'].upper()}, {temp['second_name'].upper()}
+{temp['form']} form - {temp['now_cost']} pris
+{temp['total_points']} poeng - {temp['points_per_game']} ppg
+{temp['status']} - {temp['news']}"""
     for _, sp in ps_clean.iterrows():
-        if spiller.lower() == str(sp['second_name']).lower():
+        if etternavn.lower() == str(sp['second_name']).lower() and fornavn.lower() == str(sp['first_name']).lower():
             temp = sp
-    return f"{temp['first_name']}, {temp['second_name']} - {temp['form']} form - {temp['now_cost']} pris"
+            return f"""{temp['first_name'].upper()}, {temp['second_name'].upper()}
+{temp['form']} form - {temp['now_cost']} pris
+{temp['total_points']} poeng - {temp['points_per_game']} ppg
+{temp['status']} - {temp['news']}"""
 
-#print(best_form_topp_10(ps_clean)['web_name'])
-#print(print_spiller(ps_clean, "m.salah"))
+def topp_3_kjøp(ps_clean):
+    
